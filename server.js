@@ -42,17 +42,17 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/products', (req, res) => {
-    if (!req.query.search) {
-        return res.send({
-            error: 'Search term must be provided!'
-        })
-    }
-    console.log(req.query.search)
-    res.send({
-        products: []
-    })
-})
+// app.get('/products', (req, res) => {
+//     if (!req.query.search) {
+//         return res.send({
+//             error: 'Search term must be provided!'
+//         })
+//     }
+//     console.log(req.query.search)
+//     res.send({
+//         products: []
+//     })
+// })
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
